@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selected web development projects by MyPortfolio.">
+    <title>Projects — MyPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">MyPortfolio<span>.</span></a>
+
+            <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="https://github.com/MuscuLopnul" class="nav-button" target="_blank" rel="noopener noreferrer">
+                GitHub <span>↗</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="inner-page">
+        <section class="page-hero" data-reveal>
+            <p class="section-label">A SELECTION OF MY WORK</p>
+            <h1>Ideas turned into <span class="gradient-text">projects.</span></h1>
+            <p class="page-lead">
+                A collection of web projects, experiments and applications.
+            </p>
+        </section>
+
+        <section class="projects-page-grid section-container" data-reveal>
+            <article class="project-card project-large">
+                <div class="project-art art-workout">
+                    <img
+                        class="project-screenshot"
+                        src="images/workout-journal.png"
+                        alt="Workout Journal application screenshot"
+                    >
+                    <span class="project-art-label">WORKOUT JOURNAL</span>
+                    <span class="project-art-mark">W.</span>
+                    <span class="project-art-index">01</span>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div>
+                            <p class="project-type">WEB APPLICATION</p>
+                            <h2>Workout Journal</h2>
+                        </div>
+                        <span class="project-year">2026</span>
+                    </div>
+
+                    <p>
+                        A workout tracking application designed to help
+                        users organize training sessions and monitor progress.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>C#</span>
+                        <span>ASP.NET Core MVC</span>
+                        <span>Entity Framework Core</span>
+                        <span>SQL</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/MuscuLopnul/WorkoutJournal"
+                        class="text-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Repository ↗
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card project-large">
+                <div class="project-art art-discord">
+                    <img
+                        class="project-screenshot"
+                        src="images/discord-bio.png"
+                        alt="Discord Bio website screenshot"
+                    >
+                    <span class="project-art-label">DISCORD BIO</span>
+                    <span class="project-art-mark">DB.</span>
+                    <span class="project-art-index">02</span>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div>
+                            <p class="project-type">PERSONAL WEBSITE</p>
+                            <h2>Discord Bio</h2>
+                        </div>
+                        <span class="project-year">2026</span>
+                    </div>
+
+                    <p>
+                        A personal web page created to present profile
+                        information and links in a custom visual style.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a
+                        href="https://github.com/MuscuLopnul/Bio---Discord"
+                        class="text-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View Repository ↗
+                    </a>
+                </div>
+            </article>
+
+            <article class="project-card project-large">
+                <div class="project-art art-portfolio">
+                    <span class="project-art-label">PERSONAL PORTFOLIO</span>
+                    <span class="project-art-mark">MP.</span>
+                    <span class="project-art-index">03</span>
+                </div>
+
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div>
+                            <p class="project-type">MULTI-PAGE WEBSITE</p>
+                            <h2>Developer Portfolio</h2>
+                        </div>
+                        <span class="project-year">2026</span>
+                    </div>
+
+                    <p>
+                        A multi-page portfolio featuring a dark visual
+                        identity, responsive layouts and animated elements.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <span class="project-status">Currently in development</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="cta-section section-container" data-reveal>
+            <div class="cta-panel">
+                <p class="section-label">HAVE A PROJECT IN MIND?</p>
+                <h2>Let's create your <span class="gradient-text">next idea.</span></h2>
+                <p>Tell me what you're looking to build.</p>
+                <a href="contact.html" class="primary-button">
+                    Start a Conversation <span>↗</span>
+                </a>
+                <div class="cta-decoration"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="logo">MyPortfolio<span>.</span></a>
+        <p>© <span data-year></span> MyPortfolio. Built with care.</p>
+        <a href="contact.html" class="footer-link">Have a project? Get in touch ↗</a>
+    </footer>
+</body>
+</html>
