@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Selected web development projects by MyPortfolio.">
+    <meta name="description" content="Explore 16 projects by Kirill: SpaceEdu, interactive business websites, 3D experiences, backend applications and AI prototypes.">
     <title>Projects — MyPortfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
@@ -29,7 +29,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
 
-            <a href="https://github.com/MuscuLopnul" class="nav-button" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/FreelanceByKyryl" class="nav-button" target="_blank" rel="noopener noreferrer">
                 GitHub <span>↗</span>
             </a>
         </nav>
@@ -40,129 +40,282 @@
             <p class="section-label">A SELECTION OF MY WORK</p>
             <h1>Ideas turned into <span class="gradient-text">projects.</span></h1>
             <p class="page-lead">
-                A collection of web projects, experiments and applications.
+                16 projects across interactive websites, business concepts, applications and AI.
+                Explore the collection by category, technology or name.
             </p>
         </section>
 
-        <section class="projects-page-grid section-container" data-reveal>
-            <article class="project-card project-large">
-                <div class="project-art art-workout">
-                    <img
-                        class="project-screenshot"
-                        src="images/workout-journal.png"
-                        alt="Workout Journal application screenshot"
-                    >
-                    <span class="project-art-label">WORKOUT JOURNAL</span>
-                    <span class="project-art-mark">W.</span>
-                    <span class="project-art-index">01</span>
-                </div>
+        <section class="project-tools section-container" aria-label="Find a project">
+            <div class="project-filter" role="group" aria-label="Filter by project category">
+                <button type="button" data-filter="all" aria-pressed="true">All projects <span>16</span></button>
+                <button type="button" data-filter="web" aria-pressed="false">Websites <span>12</span></button>
+                <button type="button" data-filter="apps" aria-pressed="false">Apps &amp; Backend <span>4</span></button>
+                <button type="button" data-filter="ai" aria-pressed="false">Bots &amp; AI <span>2</span></button>
+            </div>
+            <label class="project-search" for="project-search"><span>Search projects</span>
+                <input id="project-search" type="search" placeholder="Try SpaceEdu, C#, flowers…" autocomplete="off">
+            </label>
+            <p class="project-results" role="status" aria-live="polite" aria-atomic="true">Showing all 16 projects</p>
+        </section>
 
+        <section class="projects-page-grid section-container" aria-label="Project collection">
+            <article class="project-card project-large" id="spaceedu" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/spaceedu.svg" alt="SpaceEdu illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
                 <div class="project-details">
                     <div class="project-title-row">
-                        <div>
-                            <p class="project-type">WEB APPLICATION</p>
-                            <h2>Workout Journal</h2>
-                        </div>
-                        <span class="project-year">2026</span>
+                        <div><p class="project-type">INTERACTIVE SPACE EXPERIENCE</p><h2>SpaceEdu</h2></div>
+                        <span class="project-year">01</span>
                     </div>
-
-                    <p>
-                        A workout tracking application designed to help
-                        users organize training sessions and monitor progress.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>C#</span>
-                        <span>ASP.NET Core MVC</span>
-                        <span>Entity Framework Core</span>
-                        <span>SQL</span>
-                    </div>
-
-                    <a
-                        href="https://github.com/MuscuLopnul/WorkoutJournal"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Repository ↗
-                    </a>
+                    <p>A cinematic space education concept with planetary video backgrounds, instant world switching and an interactive observatory. Explore orbital motion, compare planets and complete a knowledge challenge.</p>
+                    <ul class="project-highlights"><li>Earth, Venus and Mars switcher</li><li>Interactive orbital simulation</li><li>Planet comparison and quiz</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/spaceplanet" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — SpaceEdu</span></a></div>
                 </div>
             </article>
 
-            <article class="project-card project-large">
-                <div class="project-art art-discord">
-                    <img
-                        class="project-screenshot"
-                        src="images/discord-bio.png"
-                        alt="Discord Bio website screenshot"
-                    >
-                    <span class="project-art-label">DISCORD BIO</span>
-                    <span class="project-art-mark">DB.</span>
-                    <span class="project-art-index">02</span>
+            <article class="project-card project-large" id="tensile" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/tensile.svg" alt="TENSILE Fitness illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
                 </div>
-
                 <div class="project-details">
                     <div class="project-title-row">
-                        <div>
-                            <p class="project-type">PERSONAL WEBSITE</p>
-                            <h2>Discord Bio</h2>
-                        </div>
-                        <span class="project-year">2026</span>
+                        <div><p class="project-type">3D FITNESS WEBSITE CONCEPT</p><h2>TENSILE Fitness</h2></div>
+                        <span class="project-year">02</span>
                     </div>
-
-                    <p>
-                        A personal web page created to present profile
-                        information and links in a custom visual style.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                    <a
-                        href="https://github.com/MuscuLopnul/Bio---Discord"
-                        class="text-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View Repository ↗
-                    </a>
+                    <p>A strength-club concept combining a Three.js hero scene with class schedules, membership comparisons and an interactive weekly planner. Demo reservations are stored locally in the browser.</p>
+                    <ul class="project-highlights"><li>Interactive 3D hero</li><li>Class schedule and weekly planner</li><li>Local demo reservations</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Three.js</span></div>
+                    <div class="project-actions"><a href="https://tensilefitness.netlify.app" class="text-link" target="_blank" rel="noopener noreferrer">Open demo ↗<span class="visually-hidden"> — TENSILE Fitness</span></a><a href="https://github.com/FreelanceByKyryl/tensilefitnessdemoversion" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — TENSILE Fitness</span></a></div>
                 </div>
             </article>
 
-            <article class="project-card project-large">
-                <div class="project-art art-portfolio">
-                    <span class="project-art-label">PERSONAL PORTFOLIO</span>
-                    <span class="project-art-mark">MP.</span>
-                    <span class="project-art-index">03</span>
+            <article class="project-card project-large" id="kv-freight" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/kv-freight.svg" alt="KV Freight Group illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
                 </div>
-
                 <div class="project-details">
                     <div class="project-title-row">
-                        <div>
-                            <p class="project-type">MULTI-PAGE WEBSITE</p>
-                            <h2>Developer Portfolio</h2>
-                        </div>
-                        <span class="project-year">2026</span>
+                        <div><p class="project-type">MULTI-PAGE LOGISTICS CONCEPT</p><h2>KV Freight Group</h2></div>
+                        <span class="project-year">03</span>
                     </div>
+                    <p>A multi-page freight and logistics concept presenting road, air, ocean and project cargo services. Scroll-driven motion, industry pages and a shipment-tracking demo turn a complex service offering into a clear journey.</p>
+                    <ul class="project-highlights"><li>Freight services and industries</li><li>Scroll-driven storytelling</li><li>Shipment tracking demo</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Scroll animation</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/kv-freight" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — KV Freight Group</span></a></div>
+                </div>
+            </article>
 
-                    <p>
-                        A multi-page portfolio featuring a dark visual
-                        identity, responsive layouts and animated elements.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
+            <article class="project-card project-large" id="nexloop" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/nexloop.svg" alt="NEXLOOP illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">SAAS LANDING PAGE CONCEPT</p><h2>NEXLOOP</h2></div>
+                        <span class="project-year">04</span>
                     </div>
+                    <p>A productivity SaaS landing page concept with a dashboard-style product presentation, feature storytelling and clear pricing. Interactive interface details give visitors a focused introduction to the product idea.</p>
+                    <ul class="project-highlights"><li>Dashboard-style product preview</li><li>Feature and pricing sections</li><li>Interactive landing page</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI animation</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/assasproject" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — NEXLOOP</span></a></div>
+                </div>
+            </article>
 
-                    <span class="project-status">Currently in development</span>
+            <article class="project-card project-large" id="flower-studio" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/flower-studio.svg" alt="Flower Studio illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">MULTI-PAGE FLORIST CONCEPT</p><h2>Flower Studio</h2></div>
+                        <span class="project-year">05</span>
+                    </div>
+                    <p>A floral boutique website concept with a bouquet carousel, animated photo mosaic and dedicated pages for bouquets, occasions, gallery, story and visiting the shop. An editorial visual direction brings the collection together.</p>
+                    <ul class="project-highlights"><li>Interactive bouquet carousel</li><li>Animated photo mosaic</li><li>Bouquets, occasions and gallery</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Multi-page</span></div>
+                    <div class="project-actions"><a href="https://interactiveflowershop.netlify.app" class="text-link" target="_blank" rel="noopener noreferrer">Open demo ↗<span class="visually-hidden"> — Flower Studio</span></a><a href="https://github.com/FreelanceByKyryl/YourCompanyFlowers" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Flower Studio</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="coffee-studio" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/coffee-studio.svg" alt="Kofia / Coffee Studio illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">SPECIALTY COFFEE WEBSITE DEMO</p><h2>Kofia / Coffee Studio</h2></div>
+                        <span class="project-year">06</span>
+                    </div>
+                    <p>A warm, multi-page café demo featuring a filterable menu, gallery, story and contact pages. Subtle pointer interactions and scroll reveals support a welcoming, easy-to-browse experience.</p>
+                    <ul class="project-highlights"><li>Filterable coffee menu</li><li>Menu, story and gallery pages</li><li>Responsive café experience</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span></div>
+                    <div class="project-actions"><a href="https://coffeesitedemo.netlify.app" class="text-link" target="_blank" rel="noopener noreferrer">Open demo ↗<span class="visually-hidden"> — Kofia / Coffee Studio</span></a><a href="https://github.com/FreelanceByKyryl/DemoversionOfKofia" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Kofia / Coffee Studio</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="utopia" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/utopia.svg" alt="UTOPIA Flowers illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">BULGARIAN FLORIST DEMO</p><h2>UTOPIA Flowers</h2></div>
+                        <span class="project-year">07</span>
+                    </div>
+                    <p>A Bulgarian-language flower-shop landing page demo with bouquet and occasion sections, floral photography and gentle entrance animations. A distinct visual identity separates it from the multi-page Flower Studio concept.</p>
+                    <ul class="project-highlights"><li>Bulgarian-language experience</li><li>Bouquet and occasion sections</li><li>Floral visual storytelling</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bulgarian UI</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/demoversionOfUTOPIAFLOWERS" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — UTOPIA Flowers</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="grooming" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/grooming.svg" alt="Grooming Studio 23 illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PET GROOMING WEBSITE CONCEPT</p><h2>Grooming Studio 23</h2></div>
+                        <span class="project-year">08</span>
+                    </div>
+                    <p>A playful Bulgarian-language grooming studio concept with service pages, a filterable gallery and interactive visual details. A booking-message helper lets visitors prepare and copy an appointment inquiry.</p>
+                    <ul class="project-highlights"><li>Filterable pet gallery</li><li>Services and contact pages</li><li>Copyable booking-message helper</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Multi-page</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/grooming" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Grooming Studio 23</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="alibaba" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/alibaba.svg" alt="Ali Baba Auto Service illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">AUTOMOTIVE WEBSITE CONCEPT</p><h2>Ali Baba Auto Service</h2></div>
+                        <span class="project-year">09</span>
+                    </div>
+                    <p>A Bulgarian-language automotive service website concept for Varna. Bold typography, tyre-service information and an interactive vehicle presentation guide visitors from exploring services to finding contact details.</p>
+                    <ul class="project-highlights"><li>Interactive vehicle presentation</li><li>Tyre and automotive services</li><li>Bulgarian-language interface</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Interactive UI</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/alibabacars" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Ali Baba Auto Service</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="creative-portfolio" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/creative-portfolio.svg" alt="Kirill — Creative Portfolio illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PERSONAL PORTFOLIO / ALTERNATE DESIGN</p><h2>Kirill — Creative Portfolio</h2></div>
+                        <span class="project-year">10</span>
+                    </div>
+                    <p>An alternate personal portfolio direction with bold typography, embedded project previews, category filtering and dedicated services, about and contact pages. A separate design exploration from this neon portfolio.</p>
+                    <ul class="project-highlights"><li>Alternative visual direction</li><li>Project filters and previews</li><li>Services and contact pages</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Multi-page</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/portfolio" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Kirill — Creative Portfolio</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="jarvis" data-category="apps ai">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/jarvis.svg" alt="JARVIS Personal Edition illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PERSONAL VOICE-ASSISTANT PROTOTYPE</p><h2>JARVIS Personal Edition</h2></div>
+                        <span class="project-year">11</span>
+                    </div>
+                    <p>A Windows voice-assistant learning project built in Python. It combines local Whisper speech recognition, explicitly enabled Gemini responses and configurable speech synthesis, with device selection and cancellation controls.</p>
+                    <ul class="project-highlights"><li>Local speech recognition</li><li>Opt-in Gemini integration</li><li>Selectable speech output</li></ul>
+                    <div class="project-tags"><span>Python</span><span>Whisper</span><span>Gemini API</span><span>Speech synthesis</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/JARVIS-Personal-Edition" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — JARVIS Personal Edition</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="telegram-ai" data-category="apps ai">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/telegram-ai.svg" alt="Telegram AI Bot illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PERSONAL BOT PROJECT</p><h2>Telegram AI Bot</h2></div>
+                        <span class="project-year">12</span>
+                    </div>
+                    <p>A personal C# Telegram bot project exploring Gemini-powered conversations, commands and customizable assistant behaviour. The project brings conversational assistance and API integration into a familiar messaging interface.</p>
+                    <ul class="project-highlights"><li>Conversational assistant concept</li><li>Commands and custom behaviour</li><li>API integration</li></ul>
+                    <div class="project-tags"><span>C#</span><span>Telegram Bot API</span><span>Gemini API</span></div>
+                    <div class="project-actions"><span class="project-status">Personal project · source not publicly linked</span></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="homies" data-category="apps">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/homies.svg" alt="Homies illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PERSONAL EVENT APPLICATION</p><h2>Homies</h2></div>
+                        <span class="project-year">13</span>
+                    </div>
+                    <p>An ASP.NET Core MVC event application for creating events and bringing people together. Features include authentication, event creation, joining and editing, with relational data managed through Entity Framework Core.</p>
+                    <ul class="project-highlights"><li>Authentication and event management</li><li>Join and edit event flows</li><li>Relational application data</li></ul>
+                    <div class="project-tags"><span>C#</span><span>ASP.NET Core MVC</span><span>Identity</span><span>EF Core</span></div>
+                    <div class="project-actions"><span class="project-status">Personal project · source not publicly linked</span></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="workout-journal" data-category="apps">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/workout-journal.svg" alt="Workout Journal illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">WORKOUT TRACKING APPLICATION</p><h2>Workout Journal</h2></div>
+                        <span class="project-year">14</span>
+                    </div>
+                    <p>A workout tracking web application designed to organize training sessions, exercise information and progress views. Built with ASP.NET Core MVC, Entity Framework Core and a relational database.</p>
+                    <ul class="project-highlights"><li>Workout and exercise management</li><li>Training status and progress views</li><li>Database-backed MVC application</li></ul>
+                    <div class="project-tags"><span>C#</span><span>ASP.NET Core MVC</span><span>EF Core</span><span>SQL</span></div>
+                    <div class="project-actions"><a href="https://github.com/MuscuLopnul/WorkoutJournal" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Workout Journal</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="discord-bio" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/discord-bio.svg" alt="Discord Bio illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">PERSONAL PROFILE WEBSITE</p><h2>Discord Bio</h2></div>
+                        <span class="project-year">15</span>
+                    </div>
+                    <p>A custom personal profile website with a distinctive visual identity, profile information and social links. A compact frontend project that brings personal style and useful destinations into one focused page.</p>
+                    <ul class="project-highlights"><li>Custom personal identity</li><li>Profile and social links</li><li>Focused frontend design</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-actions"><a href="https://github.com/MuscuLopnul/Bio---Discord" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Discord Bio</span></a></div>
+                </div>
+            </article>
+
+            <article class="project-card project-large" id="developer-portfolio" data-category="web">
+                <div class="project-art catalog-art">
+                    <img class="catalog-cover" src="images/projects/developer-portfolio.svg" alt="Developer Portfolio illustrated project cover" width="800" height="420" loading="lazy" decoding="async">
+                </div>
+                <div class="project-details">
+                    <div class="project-title-row">
+                        <div><p class="project-type">THIS MULTI-PAGE PORTFOLIO</p><h2>Developer Portfolio</h2></div>
+                        <span class="project-year">16</span>
+                    </div>
+                    <p>The portfolio you are browsing: a dark neon visual identity, responsive multi-page layout, project archive, category filters and instant search. Built without a framework or a build step.</p>
+                    <ul class="project-highlights"><li>Searchable project archive</li><li>Responsive multi-page layout</li><li>Dark neon visual identity</li></ul>
+                    <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                    <div class="project-actions"><a href="https://github.com/FreelanceByKyryl/MyPortfolio" class="text-link" target="_blank" rel="noopener noreferrer">View source ↗<span class="visually-hidden"> — Developer Portfolio</span></a></div>
                 </div>
             </article>
         </section>
+        <div class="project-empty section-container" hidden><h2>No projects found.</h2><p>Try another search or reset the collection.</p><button type="button" class="secondary-button" data-reset-projects>Show all projects</button></div>
 
         <section class="cta-section section-container" data-reveal>
             <div class="cta-panel">

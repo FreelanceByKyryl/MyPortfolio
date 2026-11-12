@@ -61,8 +61,7 @@ MyPortfolio/
 ├── script.js
 │
 └── images/
-    ├── workout-journal.png
-    └── discord-bio.png
+    └── projects/             # Local illustrated SVG covers
 ```
 
 ## Getting Started
@@ -74,25 +73,55 @@ MyPortfolio/
 
 No additional build tools or dependencies are required.
 
-## Featured Projects
+## Project Collection
 
-**Workout Journal**
+The archive contains 16 entries, including 13 additions to the original collection:
 
-A workout tracking web application built with C# and ASP.NET Core MVC.
+- SpaceEdu — cinematic planetary hero and an interactive observatory
+- TENSILE Fitness — Three.js fitness website concept
+- KV Freight Group — multi-page logistics concept with tracking demo
+- NEXLOOP — productivity SaaS landing page concept
+- Flower Studio — multi-page floral boutique concept
+- Kofia / Coffee Studio — specialty coffee website demo
+- UTOPIA Flowers — Bulgarian-language florist demo
+- Grooming Studio 23 — pet grooming website concept
+- Ali Baba Auto Service — interactive automotive concept
+- Kirill — Creative Portfolio — alternate portfolio design
+- JARVIS Personal Edition — Python voice-assistant prototype
+- Telegram AI Bot — personal C# / Gemini bot project
+- Homies — personal ASP.NET Core event application
+- Workout Journal — existing workout tracking application
+- Discord Bio — existing profile website
+- Developer Portfolio — this website
 
-Repository: [WorkoutJournal](https://github.com/MuscuLopnul/WorkoutJournal)
+`projects.html` contains the complete static collection. `script.js` enhances it
+with category filtering, multi-word search, result counts and a reset action.
+`index.html` highlights SpaceEdu, TENSILE, KV Freight and NEXLOOP.
 
-**Discord Bio**
+The local SVG artwork in `images/projects/` consists of illustrated covers, not
+screenshots, and has no third-party asset dependencies. Individual source and
+existing demo links are available on each card when documented. Projects without
+a documented public source link are identified as personal projects.
 
-A custom personal website built with HTML, CSS and JavaScript.
+See [PROJECT_AUDIT.md](PROJECT_AUDIT.md) for source provenance and link limitations.
 
-Repository: [Bio---Discord](https://github.com/MuscuLopnul/Bio---Discord)
+### Local preview
+
+Opening `index.html` directly works. For an HTTP preview from this directory:
+
+```sh
+python3 -m http.server 8000
+```
+
+No dependency installation or build command is needed. Open `projects.html` to
+browse, search or filter the collection. Project cards remain available when
+JavaScript is disabled.
 
 ## Contact
 
 **Email:** itjobfreelancer1@gmail.com
 
-**GitHub:** [MuscuLopnul](https://github.com/MuscuLopnul)
+**GitHub:** [FreelanceByKyryl](https://github.com/FreelanceByKyryl)
 
 ---
 

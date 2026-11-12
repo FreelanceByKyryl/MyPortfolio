@@ -25,6 +25,72 @@ if (menuToggle && navLinks) {
 
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
+// The complete archive is authored in HTML, so it also works without JavaScript.
+const projectCards = [...document.querySelectorAll('.projects-page-grid [data-category]')];
+const projectSearch = document.querySelector('#project-search');
+const projectFilters = [...document.querySelectorAll('[data-filter]')];
+const projectResults = document.querySelector('.project-results');
+const projectEmpty = document.querySelector('.project-empty');
+let activeProjectFilter = 'all';
+
+if (projectCards.length && projectSearch && projectResults) {
+    const searchableText = new Map(projectCards.map(card => [
+        card, card.textContent.toLocaleLowerCase().replace(/\s+/g, ' ')
+    ]));
+
+    function filterProjects() {
+        const words = projectSearch.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+        let visibleCount = 0;
+
+        projectCards.forEach(card => {
+            const categories = card.dataset.category.split(' ');
+            const categoryMatches = activeProjectFilter === 'all' || categories.includes(activeProjectFilter);
+            const searchMatches = words.every(word => searchableText.get(card).includes(word));
+            card.hidden = !(categoryMatches && searchMatches);
+            if (!card.hidden) visibleCount++;
+        });
+
+        projectFilters.forEach(button => {
+            button.setAttribute('aria-pressed', String(button.dataset.filter === activeProjectFilter));
+        });
+
+        projectResults.textContent = visibleCount === projectCards.length
+            ? `Showing all ${projectCards.length} projects`
+            : `Showing ${visibleCount} of ${projectCards.length} projects`;
+        if (projectEmpty) projectEmpty.hidden = visibleCount !== 0;
+    }
+
+    projectFilters.forEach(button => {
+        button.addEventListener('click', () => {
+            activeProjectFilter = button.dataset.filter;
+            filterProjects();
+        });
+    });
+
+    projectSearch.addEventListener('input', filterProjects);
+
+    document.querySelector('[data-reset-projects]')?.addEventListener('click', () => {
+        activeProjectFilter = 'all';
+        projectSearch.value = '';
+        filterProjects();
+        projectSearch.focus();
+    });
+
+    // Featured links and shared URLs always reveal their target, even after filtering.
+    function revealLinkedProject() {
+        const card = projectCards.find(item => `#${item.id}` === window.location.hash);
+        if (!card) return;
+        activeProjectFilter = 'all';
+        projectSearch.value = '';
+        filterProjects();
+        card.scrollIntoView({ block: 'start', behavior: 'instant' });
+    }
+
+    window.addEventListener('hashchange', revealLinkedProject);
+    filterProjects();
+    revealLinkedProject();
+}
+
 document.querySelectorAll('.nav-links a').forEach(link => {
     const linkPage = new URL(link.href).pathname.split('/').pop();
 
